@@ -21,8 +21,8 @@ class QTOPENSSL3AES_EXPORT QtOpenssl3AES
 {
 public:
     QtOpenssl3AES();
-    static bool encrypt (QByteArray plainText, QByteArray keyAES, QByteArray ivAES, QByteArray &cipherText);
-    static bool decrypt (QByteArray &plainText, QByteArray keyAES, QByteArray ivAES, QByteArray cipherText);
+    static bool encrypt (QByteArray plainText, QByteArray keyAES, QByteArray ivAES, QByteArray &cipherText, const EVP_CIPHER* algo = EVP_aes_256_cbc());
+    static bool decrypt (QByteArray &plainText, QByteArray keyAES, QByteArray ivAES, QByteArray cipherText, const EVP_CIPHER* algo = EVP_aes_256_cbc());
 };
 
 #endif // QTOPENSSL3AES_H
