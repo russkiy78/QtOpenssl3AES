@@ -1,5 +1,5 @@
 # QtOpenssl3AES
-Qt C++ wrapper for OpenSSL# AES implementation
+Qt C++ wrapper for OpenSSL v3.0 AES implementation
 
 #  Installation
 
